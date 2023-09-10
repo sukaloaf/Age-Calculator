@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  margin: 125px auto 0;
+  background-color: #ffffff;
+  width: 600px;
+  height: 400px;
+  border-radius: 15px 15px 150px 15px;
+}
+
+.topText {
+  display: flex;
+  flex-direction: row;
+}
+
+.topText p {
+  margin-right: 115px;
+  color: #707070;
+  font-size: 9pt;
+}
+
+.input {
+  display: flex;
+}
+
+.dateInput {
+  width: 90px;
+  height: 35px;
+  margin-right: 74px;
+  font-size: 12pt;
+  border: 1px solid;
+  border-color: #dddddd;
+  border-radius: 5px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.dateInput:hover {
+  border-color: #7762a5;
+}
+
+#dayInput {
+  margin-right: 54px;
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  height: 65px;
+  width: 100%;
+}
+
+hr {
+  align-self: center;
+  background: #ececec;
+  width: 90%;
+  height: 1px;
+}
+
+#hr2 {
+  display: none;
+}
+
+.middle button {
+  background-color: #854cff;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.middle button:hover {
+  background-color: black;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.output {
+  font-size: 52pt;
+  font-weight: 800;
+  height: 60px;
+  font-style: italic;
+}
+
+.output span {
+  color: #854cff;
+}
+
+.errorText {
+  display: none;
+  flex-direction: row;
+  font-size: 8pt;
+  color: #ea595f;
+  margin-top: 5px;
+}
+
+.errorDayInput {
+  margin-right: 35px;
+}
+
+.errorMonthInput {
+  margin-right: 40px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 460px;
+    height: 500px;
+  }
+
+  .top {
+    margin-bottom: 30px;
+  }
+
+  #hr2 {
+    display: flex;
+  }
+
+  .bottom {
+    text-align: center;
+    margin: 30px;
+  }
+
+  .output {
+    font-size: 32pt;
+  }
+}

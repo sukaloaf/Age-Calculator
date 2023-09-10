@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <div class="topText">
+          <p class="dayTopText">DAY</p>
+          <p class="monthTopText">MONTH</p>
+          <p class="yearTopText">YEAR</p>
+        </div>
+        <div class="input">
+          <input
+            class="dateInput"
+            type="number"
+            name="Day"
+            id="dayInput"
+            placeholder="DD"
+            minlength="1"
+            maxlength="2"
+            required
+          />
+          <input
+            class="dateInput"
+            type="number"
+            name="Month"
+            id="monthInput"
+            placeholder="MM"
+            required
+          />
+          <input
+            class="dateInput"
+            type="number"
+            name="Year"
+            id="yearInput"
+            placeholder="YYYY"
+            required
+          />
+        </div>
+        <div class="errorText">
+          <p class="errorDayInput">Must be a valid day</p>
+          <p class="errorMonthInput">Must be a valid month</p>
+          <p class="errorYearInput">Must be in the past</p>
+        </div>
+      </div>
+      <div class="middle">
+        <hr />
+        <button id="btn">
+          <img
+            class="arrow"
+            src="./assets/images/icon-arrow.svg"
+            alt="Arrow Icon"
+          />
+        </button>
+        <hr id="hr2" />
+      </div>
+      <div class="bottom">
+        <div class="output">
+          <p><span id="yearOutput">--</span> years</p>
+        </div>
+        <div class="output">
+          <p><span id="monthOutput">--</span> months</p>
+        </div>
+        <div class="output">
+          <p><span id="dayOutput">--</span> days</p>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
